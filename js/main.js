@@ -14,6 +14,15 @@
 // });
 
 $(document).ready(function () {
+	$('.slider').slick({ 
+  centerMode: true,
+  centerPadding: '160px',
+  slidesToShow: 1,
+   slidesToScroll: 1,
+   variableWidth: true,
+   arrows: false,
+
+	});
   $('.header__burger').click(function (event) {
     $('.header__burger,.header__menu').toggleClass('active');
     $('body').toggleClass('lock');
